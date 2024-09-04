@@ -1,0 +1,16 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "cognitolambdatrigger646d92a9646d92a9",
+  "functionName": "cognitolambdatrigger646d92a9646d92a9PostAuthentication",
+  "resourceName": "cognitolambdatrigger646d92a9646d92a9PostAuthentication",
+  "parentStack": "auth",
+  "triggerEnvs": "[]",
+  "triggerDir": "C:\\snapshot\\amplify-cli\\build\\node_modules\\@aws-amplify\\amplify-category-auth\\provider-utils\\awscloudformation\\triggers\\PostAuthentication",
+  "triggerTemplate": "PostAuthentication.json.ejs",
+  "triggerEventPath": "PostAuthentication.event.json",
+  "roleName": "cognitolambdatrigger646d92a9646d92a9PostAuthentication",
+  "skipEdit": true
+}

@@ -1,0 +1,79 @@
+{
+  "auth": {
+    "cognitolambdatrigger646d92a9646d92a9": {
+      "customAuth": false,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "cognitolambdatrigger646d92a9646d92a9PostAuthentication",
+          "triggerProvider": "Cognito"
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL",
+          "FAMILY_NAME",
+          "GIVEN_NAME",
+          "NAME",
+          "PICTURE"
+        ],
+        "socialProviders": [
+          "GOOGLE"
+        ],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "cognitolambdatrigger646d92a9646d92a9PostAuthentication": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_auth_cognitolambdatrigger646d92a9646d92a9_googleClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cognitolambdatrigger646d92a9646d92a9"
+        }
+      ]
+    },
+    "AMPLIFY_function_cognitolambdatrigger646d92a9646d92a9PostAuthentication_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cognitolambdatrigger646d92a9646d92a9PostAuthentication"
+        }
+      ]
+    },
+    "AMPLIFY_function_cognitolambdatrigger646d92a9646d92a9PostAuthentication_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cognitolambdatrigger646d92a9646d92a9PostAuthentication"
+        }
+      ]
+    }
+  }
+}

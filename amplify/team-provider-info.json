@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cognitolambdatrigger-dev-d3433-authRole",
+      "UnauthRoleArn": "arn:aws:iam::675436869821:role/amplify-cognitolambdatrigger-dev-d3433-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::675436869821:role/amplify-cognitolambdatrigger-dev-d3433-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
+      "UnauthRoleName": "amplify-cognitolambdatrigger-dev-d3433-unauthRole",
+      "StackName": "amplify-cognitolambdatrigger-dev-d3433",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:675436869821:stack/amplify-cognitolambdatrigger-dev-d3433/22dabaf0-6a51-11ef-b3c3-022a5ec4877f",
+      "AmplifyAppId": "d20buc5a0bs60f",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-cognitolambdatrigger-dev-d3433-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "cognitolambdatrigger646d92a9646d92a9": {
+          "googleClientId": "632283183775-76kriae4gqcegl6plnc235dmu90gnhdl.apps.googleusercontent.com"
+        }
+      },
+      "function": {
+        "cognitolambdatrigger646d92a9646d92a9PostAuthentication": {
+          "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
+          "s3Key": "amplify-builds/cognitolambdatrigger646d92a9646d92a9PostAuthentication-55487753433345484e51-build.zip"
+        }
+      }
+    }
+  }
+}
