@@ -3,8 +3,7 @@
  */
 exports.handler = async (event, context) => {
   // insert code to be executed by your lambda trigger
+  console.log({ event, context });
 
-  console.log(event.requestContext);
-
-  return event;
+  return event.requestContext;
 };
