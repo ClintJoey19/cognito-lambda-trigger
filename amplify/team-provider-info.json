@@ -21,7 +21,7 @@
       "function": {
         "cognitolambdatrigger646d92a9646d92a9PostAuthentication": {
           "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
-          "s3Key": "amplify-builds/cognitolambdatrigger646d92a9646d92a9PostAuthentication-57372f4a6f39336c7741-build.zip"
+          "s3Key": "amplify-builds/cognitolambdatrigger646d92a9646d92a9PostAuthentication-654436423078466b4c71-build.zip"
         }
       }
     }

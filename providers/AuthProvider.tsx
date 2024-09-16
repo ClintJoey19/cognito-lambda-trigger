@@ -12,4 +12,5 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
 export default withAuthenticator(AuthProvider, {
   socialProviders: ["google"],
+  hideSignUp: true,
 });
