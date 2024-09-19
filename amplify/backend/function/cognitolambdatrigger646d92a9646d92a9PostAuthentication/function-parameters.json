@@ -12,5 +12,11 @@
   "triggerTemplate": "PostAuthentication.json.ejs",
   "triggerEventPath": "PostAuthentication.event.json",
   "roleName": "cognitolambdatrigger646d92a9646d92a9PostAuthentication",
-  "skipEdit": true
+  "skipEdit": true,
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "mongoUri",
+      "environmentVariableName": "MONGO_URI"
+    }
+  ]
 }

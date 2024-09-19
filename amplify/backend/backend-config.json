@@ -1,4 +1,20 @@
 {
+  "api": {
+    "calendar": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "cognitolambdatrigger7d1205bc"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "cognitolambdatrigger646d92a9646d92a9": {
       "customAuth": false,
@@ -48,6 +64,11 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "cognitolambdatrigger7d1205bc": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -67,11 +88,35 @@
         }
       ]
     },
+    "AMPLIFY_function_cognitolambdatrigger646d92a9646d92a9PostAuthentication_mongoUri": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cognitolambdatrigger646d92a9646d92a9PostAuthentication"
+        }
+      ]
+    },
     "AMPLIFY_function_cognitolambdatrigger646d92a9646d92a9PostAuthentication_s3Key": {
       "usedBy": [
         {
           "category": "function",
           "resourceName": "cognitolambdatrigger646d92a9646d92a9PostAuthentication"
+        }
+      ]
+    },
+    "AMPLIFY_function_cognitolambdatrigger7d1205bc_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cognitolambdatrigger7d1205bc"
+        }
+      ]
+    },
+    "AMPLIFY_function_cognitolambdatrigger7d1205bc_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cognitolambdatrigger7d1205bc"
         }
       ]
     }

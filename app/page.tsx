@@ -1,7 +1,10 @@
 import SignOutButton from "@/components/auth/SignOutButton";
+import { getUserAttributes } from "@/lib/amplify/amplifyServerUtils";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  const user = await getUserAttributes();
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -40,7 +43,10 @@ export default function Home() {
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+      <div className="mb-32 flex flex-col gap-4">
+        <p>
+          {user?.given_name} {user?.family_name}
+        </p>
         <SignOutButton />
       </div>
     </main>

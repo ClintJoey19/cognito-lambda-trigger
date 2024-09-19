@@ -10,7 +10,8 @@
       "StackName": "amplify-cognitolambdatrigger-dev-d3433",
       "StackId": "arn:aws:cloudformation:ap-southeast-2:675436869821:stack/amplify-cognitolambdatrigger-dev-d3433/22dabaf0-6a51-11ef-b3c3-022a5ec4877f",
       "AmplifyAppId": "d20buc5a0bs60f",
-      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-cognitolambdatrigger-dev-d3433-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-cognitolambdatrigger-dev-d3433-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-cognitolambdatrigger-dev-d3433-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
@@ -21,8 +22,16 @@
       "function": {
         "cognitolambdatrigger646d92a9646d92a9PostAuthentication": {
           "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
-          "s3Key": "amplify-builds/cognitolambdatrigger646d92a9646d92a9PostAuthentication-654436423078466b4c71-build.zip"
+          "s3Key": "amplify-builds/cognitolambdatrigger646d92a9646d92a9PostAuthentication-3170463144514a486d55-build.zip",
+          "mongoUri": "mongodb+srv://llosalaclintjoey:LoIQ7V9Yvk40sU6u@cluster0.mndlm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+        },
+        "cognitolambdatrigger7d1205bc": {
+          "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
+          "s3Key": "amplify-builds/cognitolambdatrigger7d1205bc-62456d56753454513637-build.zip"
         }
+      },
+      "api": {
+        "calendar": {}
       }
     }
   }

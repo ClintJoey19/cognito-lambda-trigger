@@ -12,6 +12,7 @@
     "@aws-amplify/adapter-nextjs": "^1.2.16",
     "@aws-amplify/ui-react": "^6.2.1",
     "aws-amplify": "^6.5.4",
+    "mongoose": "^8.6.2",
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18"

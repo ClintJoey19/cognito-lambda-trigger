@@ -1,3 +1,5 @@
+import User from "./models/user.model.js";
+import connectToDB from "./db.js";
 /**
  * @fileoverview
  *
@@ -9,11 +11,6 @@
  * The names of modules to load are stored as a comma-delimited string in the
  * `MODULES` env var.
  */
-const moduleNames = process.env.MODULES.split(",");
-/**
- * The array of imported modules.
- */
-const modules = moduleNames.map((name) => require(`./${name}`));
 
 /**
  * This async handler iterates over the given modules and awaits them.
@@ -22,13 +19,36 @@ const modules = moduleNames.map((name) => require(`./${name}`));
  * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
  *
  */
-exports.handler = async (event, context) => {
-  /**
-   * Instead of naively iterating over all handlers, run them concurrently with
-   * `await Promise.all(...)`. This would otherwise just be determined by the
-   * order of names in the `MODULES` var.
-   */
-  await Promise.all(modules.map((module) => module.handler(event, context)));
+export const handler = async (event, context) => {
+  const { given_name, family_name, name, email, picture } =
+    event.request.userAttributes;
 
-  return event;
+  console.log(event, context);
+
+  // send user credentials to mongodb
+  try {
+    await connectToDB();
+
+    // verify if user exists on the db
+    const isUserExists = await User.findOne({
+      email,
+    });
+
+    if (isUserExists) return event;
+
+    const user = new User({
+      firstname: given_name,
+      lastname: family_name,
+      email,
+      picture,
+    });
+
+    const res = await user.save();
+
+    if (!res) throw new Error("There was an error in creating the user");
+
+    return event;
+  } catch (error) {
+    console.error(error.message);
+  }
 };

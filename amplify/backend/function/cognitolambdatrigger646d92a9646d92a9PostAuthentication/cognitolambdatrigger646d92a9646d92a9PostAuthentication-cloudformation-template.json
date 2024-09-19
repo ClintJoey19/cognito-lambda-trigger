@@ -39,6 +39,9 @@
     },
     "s3Key": {
       "Type": "String"
+    },
+    "mongoUri": {
+      "Type": "String"
     }
   },
   "Conditions": {
@@ -88,6 +91,9 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
+            },
+            "MONGO_URI": {
+              "Ref": "mongoUri"
             }
           }
         },
