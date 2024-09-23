@@ -27,7 +27,7 @@
         },
         "cognitolambdatrigger7d1205bc": {
           "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
-          "s3Key": "amplify-builds/cognitolambdatrigger7d1205bc-62456d56753454513637-build.zip"
+          "s3Key": "amplify-builds/cognitolambdatrigger7d1205bc-697a466f5653485a5049-build.zip"
         }
       },
       "api": {

@@ -11,25 +11,7 @@ export const middleware = async (request: NextRequest) => {
 
   // const session = await getServerSession();
 
-  // if (!session) return;
-
-  // const groups = Array(session.tokens?.accessToken.payload["cognito:groups"]);
-
-  // const isHrRoute = hrRoutes.includes(nextUrl.pathname);
-  // const isTlRoute = tlRoutes.includes(nextUrl.pathname);
-  // const isAdminRoute = adminRoutes.includes(nextUrl.pathname);
-
-  // if (isHrRoute && !groups.includes("hr")) {
-  //   return NextResponse.redirect(new URL("/", nextUrl));
-  // }
-
-  // if (isTlRoute && !groups.includes("tl")) {
-  //   return NextResponse.redirect(new URL("/", nextUrl));
-  // }
-
-  // if (isAdminRoute && !groups.includes("admin")) {
-  //   return NextResponse.redirect(new URL("/", nextUrl));
-  // }
+  // console.log(session);
 };
 
 export const config = {
