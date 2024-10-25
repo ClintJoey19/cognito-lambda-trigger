@@ -9,6 +9,54 @@
           ],
           "category": "function",
           "resourceName": "cognitolambdatrigger7d1205bc"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "helloworld"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "postReactionsHandler"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "userPostsHandler"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "productsHandler"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "itemsHandler"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "shortcutsHandler"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -69,6 +117,38 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "helloworld": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "itemsHandler": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "postReactionsHandler": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "productsHandler": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "shortcutsHandler": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "userPostsHandler": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -117,6 +197,118 @@
         {
           "category": "function",
           "resourceName": "cognitolambdatrigger7d1205bc"
+        }
+      ]
+    },
+    "AMPLIFY_function_helloworld_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "helloworld"
+        }
+      ]
+    },
+    "AMPLIFY_function_helloworld_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "helloworld"
+        }
+      ]
+    },
+    "AMPLIFY_function_itemsHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "itemsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_itemsHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "itemsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_postReactionsHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "postReactionsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_postReactionsHandler_mongoUri": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "postReactionsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_postReactionsHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "postReactionsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_productsHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "productsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_productsHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "productsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_shortcutsHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "shortcutsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_shortcutsHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "shortcutsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_userPostsHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userPostsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_userPostsHandler_mongoUri": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userPostsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_userPostsHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userPostsHandler"
         }
       ]
     }

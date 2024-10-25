@@ -27,7 +27,33 @@
         },
         "cognitolambdatrigger7d1205bc": {
           "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
-          "s3Key": "amplify-builds/cognitolambdatrigger7d1205bc-697a466f5653485a5049-build.zip"
+          "s3Key": "amplify-builds/cognitolambdatrigger7d1205bc-62776577797763687049-build.zip"
+        },
+        "helloworld": {
+          "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
+          "s3Key": "amplify-builds/helloworld-31496475316439756f32-build.zip"
+        },
+        "userPostsHandler": {
+          "mongoUri": "mongodb+srv://llosalaclintjoey:LoIQ7V9Yvk40sU6u@cluster0.mndlm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+          "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
+          "s3Key": "amplify-builds/userPostsHandler-41643668784e4c55626f-build.zip"
+        },
+        "postReactionsHandler": {
+          "mongoUri": "mongodb+srv://llosalaclintjoey:LoIQ7V9Yvk40sU6u@cluster0.mndlm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+          "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
+          "s3Key": "amplify-builds/postReactionsHandler-6376662b705a54424769-build.zip"
+        },
+        "productsHandler": {
+          "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
+          "s3Key": "amplify-builds/productsHandler-6642432f584e61644961-build.zip"
+        },
+        "itemsHandler": {
+          "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
+          "s3Key": "amplify-builds/itemsHandler-346c2b76715a62314d71-build.zip"
+        },
+        "shortcutsHandler": {
+          "deploymentBucketName": "amplify-cognitolambdatrigger-dev-d3433-deployment",
+          "s3Key": "amplify-builds/shortcutsHandler-30336b7a4d642f566141-build.zip"
         }
       },
       "api": {

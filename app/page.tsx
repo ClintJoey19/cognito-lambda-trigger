@@ -1,6 +1,8 @@
+import SignInButton from "@/components/auth/SignInButton";
 import SignOutButton from "@/components/auth/SignOutButton";
 import { getUserAttributes } from "@/lib/amplify/amplifyServerUtils";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 export default async function Home() {
   const user = await getUserAttributes();
@@ -47,7 +49,7 @@ export default async function Home() {
         <p>
           {user?.given_name} {user?.family_name}
         </p>
-        <SignOutButton />
+        {user ? <SignOutButton /> : <SignInButton />}
       </div>
     </main>
   );

@@ -1,13 +1,12 @@
-"use client";
-import { getCalendar } from "@/lib/amplify/amplify.rest";
-import { useEffect } from "react";
+import CalendarEvents from "./_components/CalendarEvents";
 
 const page = () => {
-  useEffect(() => {
-    const response = getCalendar().then((res) => console.log(res));
-  }, []);
-
-  return <div>Calendar</div>;
+  return (
+    <div className="flex flex-col gap-4">
+      <h1>Calendar</h1>
+      <CalendarEvents />
+    </div>
+  );
 };
 
 export default page;

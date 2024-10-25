@@ -1,3 +1,6 @@
-export const parseJSON = (json: unknown) => {
-  return JSON.parse(JSON.stringify(json));
-};
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
